@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofreu um Acidente? Orientação Completa e Humana | Mariam Serhan - 1-800-NoFault</title>
+    <meta name="description" content="Acompanhamento pessoal após acidentes de carro, trabalho ou quedas. Atendimento em português, inglês e espanhol. Mariam Serhan - (407) 558-9191">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-image {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00b4d8;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .phone-number {
+            color: #00b4d8;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 8px;
+            font-size: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #00b4d8 0%, #0096c7 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .subheadline {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .personal-intro {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #023047;
+            color: #ffffff;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(2, 48, 71, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #001219;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(2, 48, 71, 0.5);
+        }
+
+        .trust-indicators {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .trust-item::before {
+            content: "✓";
+            background: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        /* How I Can Help Section */
+        .help-section {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            color: #023047;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #6b7280;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .help-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #00b4d8;
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,180,216,0.15);
+        }
+
+        .help-card-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .help-card h3 {
+            font-size: 22px;
+            color: #023047;
+            margin-bottom: 15px;
+        }
+
+        .help-card p {
+            color: #4b5563;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Authority Section */
+        .authority-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .authority-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .authority-text h2 {
+            font-size: 36px;
+            color: #023047;
+            margin-bottom: 25px;
+        }
+
+        .authority-text p {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .no-fault-box {
+            background: #caf0f8;
+            border-left: 4px solid #00b4d8;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .no-fault-box h4 {
+            color: #023047;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .no-fault-box p {
+            font-size: 16px;
+            color: #374151;
+            line-height: 1.7;
+        }
+
+        .authority-image {
+            background: linear-gradient(135deg, #caf0f8 0%, #ade8f4 100%);
+            border-radius: 12px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+
+        .authority-image-placeholder {
+            text-align: center;
+            color: #023047;
+        }
+
+        .authority-image-placeholder svg {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Emotional Section */
+        .emotional-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #023047 0%, #005f73 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .emotional-section h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .emotional-section p {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            opacity: 0.95;
+        }
+
+        .emotional-highlight {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: #90e0ef;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 42px;
+            color: #023047;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            color: #005f73;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: #023047;
+            color: white;
+            padding: 20px 50px;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(2, 48, 71, 0.4);
+        }
+
+        .cta-primary:hover {
+            background: #001219;
+            transform: translateY(-2px);
+        }
+
+        .cta-secondary {
+            background: white;
+            color: #023047;
+            padding: 20px 50px;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 3px solid #023047;
+        }
+
+        .cta-secondary:hover {
+            background: #f3f4f6;
+        }
+
+        /* Important Info Section */
+        .info-section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .info-item {
+            padding: 30px;
+        }
+
+        .info-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .info-item h3 {
+            font-size: 22px;
+            color: #023047;
+            margin-bottom: 15px;
+        }
+
+        .info-item p {
+            font-size: 16px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: #d1d5db;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-languages {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+            }
+
+            .hero .personal-intro {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .authority-content {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-indicators {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-primary, .cta-secondary {
+                width: 100%;
+                padding: 18px 30px;
+                font-size: 18px;
+            }
+
+            /* Professional intro section responsive */
+            section[style*="grid-template-columns: 1fr 2fr"] > div > div {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            z-index: 999;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <!-- Logo SVG based on the turquoise brand -->
+                    <svg width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="50" y="80" width="40" height="90" fill="#00b4d8" transform="rotate(-10 70 125)"/>
+                        <rect x="80" y="60" width="40" height="110" fill="#00b4d8" transform="rotate(-10 100 115)"/>
+                        <rect x="110" y="40" width="40" height="130" fill="#00b4d8" transform="rotate(-10 130 105)"/>
+                        <line x1="40" y1="170" x2="160" y2="170" stroke="#00b4d8" stroke-width="3"/>
+                    </svg>
+                    <div class="logo-text">1-800-NoFault</div>
+                </div>
+                <div class="header-cta">
+                    <div class="language-flags" title="Português • English • Español">🇧🇷 🇺🇸 🇪🇸</div>
+                    <a href="tel:4075589191" class="phone-number">(407) 558-9191</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sofreu um Acidente?<br>Você Não Precisa Enfrentar Isso Sozinho.</h1>
+            <p class="subheadline">Eu sou sua assessora pessoal e vou te acompanhar em cada etapa — desde a orientação inicial até o acompanhamento com advogado e tratamento médico.</p>
+            <p class="personal-intro">👋 Olá, sou <strong>Mariam Serhan</strong> e estou aqui para ajudar você.</p>
+            <a href="#contato" class="cta-button">Falar Comigo Agora</a>
+            
+            <div class="trust-indicators">
+                <div class="trust-item">Atendimento 100% Gratuito</div>
+                <div class="trust-item">Português • English • Español</div>
+                <div class="trust-item">Resposta em 24h</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Introduction Section -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: center; max-width: 1000px; margin: 0 auto;">
+                <div style="text-align: center;">
+                    <div style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, #caf0f8 0%, #ade8f4 100%); margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 5px solid #00b4d8; box-shadow: 0 10px 30px rgba(0,180,216,0.2);">
+                        <svg width="150" height="150" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="70" r="40" fill="#00b4d8" opacity="0.3"/>
+                            <path d="M40 160 Q100 130 160 160" stroke="#00b4d8" stroke-width="25" fill="none" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 style="margin-top: 20px; color: #023047; font-size: 24px; font-weight: 700;">Mariam Serhan</h3>
+                    <p style="color: #00b4d8; font-size: 16px; font-weight: 600;">Assessora Pessoal</p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center; font-size: 24px;">
+                        🇧🇷 🇺🇸 🇪🇸
+                    </div>
+                </div>
+                <div>
+                    <h2 style="color: #023047; font-size: 32px; margin-bottom: 20px; font-weight: 700;">Conheça Sua Assessora</h2>
+                    <p style="font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 15px;">
+                        Meu nome é Mariam e trabalho diretamente com pessoas que sofreram acidentes e precisam de orientação clara e suporte real.
+                    </p>
+                    <p style="font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 15px;">
+                        <strong style="color: #023047;">Minha missão é simples:</strong> garantir que você não se sinta perdido ou sozinho nesse momento difícil. Seja um acidente de carro, de trabalho ou uma queda, eu vou te guiar em cada passo.
+                    </p>
+                    <p style="font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 25px;">
+                        Trabalho em parceria com a 1-800-NoFault e atendo em <strong>português, inglês e espanhol</strong> — porque você merece ser compreendido no seu idioma.
+                    </p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="tel:4075589191" style="background: #00b4d8; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: 600;">📞 (407) 558-9191</a>
+                        <a href="https://wa.me/14075589191" target="_blank" style="background: #25d366; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: 600;">💬 WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How I Can Help Section -->
+    <section class="help-section">
+        <div class="container">
+            <h2 class="section-title">Como Eu Posso Te Ajudar</h2>
+            <p class="section-subtitle">Meu trabalho é simplificar tudo para você. Do primeiro momento após o acidente até a conclusão do seu caso.</p>
+            
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-card-icon">📞</div>
+                    <h3>Orientação Imediata</h3>
+                    <p>Você não vai ficar perdido. Assim que me procurar, vou explicar exatamente o que você precisa fazer e quais são seus direitos.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">⚖️</div>
+                    <h3>Conexão com Advogado</h3>
+                    <p>Vou te conectar com advogados especializados que realmente entendem do seu tipo de caso e vão lutar pelos seus direitos.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">🏥</div>
+                    <h3>Tratamento Médico</h3>
+                    <p>Te encaminho para clínicas e profissionais de saúde que trabalham com casos de acidente — sem você ter que se preocupar com pagamento inicial.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">📋</div>
+                    <h3>Acompanhamento Completo</h3>
+                    <p>Não vou te deixar sozinho no meio do caminho. Estou com você durante todo o processo até tudo ser resolvido.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">🌍</div>
+                    <h3>Atendimento Multilíngue</h3>
+                    <p>Falo português, inglês e espanhol. Você vai ser entendido e vai entender tudo claramente, no seu idioma.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">💰</div>
+                    <h3>Sem Custo Inicial</h3>
+                    <p>Você não paga nada antecipado. Os honorários só são cobrados se houver indenização. Sem risco para você.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority Section -->
+    <section class="authority-section">
+        <div class="container">
+            <div class="authority-content">
+                <div class="authority-text">
+                    <h2>Por Que Você Pode Confiar em Mim</h2>
+                    <p>Trabalho em parceria com a <strong>1-800-NoFault</strong>, uma empresa reconhecida e experiente em casos de acidentes. Minha função é ser o elo humano entre você e toda a estrutura profissional que você precisa.</p>
+                    <p>Entendo que cada caso é único, e por isso ofereço um atendimento personalizado, próximo e atencioso. Não sou apenas mais um número em um sistema — sou a pessoa que vai ouvir você, entender sua situação e caminhar ao seu lado.</p>
+                    
+                    <div class="no-fault-box">
+                        <h4>O que é a Lei No-Fault?</h4>
+                        <p>Em alguns estados dos EUA, existe uma lei chamada "No-Fault" que garante que, independente de quem causou o acidente, você tem direito a cobertura de despesas médicas e outros benefícios pelo seu próprio seguro.</p>
+                        <p>Parece complicado? Não se preocupe. Eu explico tudo de forma simples e cuido de toda a burocracia para você.</p>
+                    </div>
+                </div>
+
+                <div class="authority-image">
+                    <div class="authority-image-placeholder">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="80" fill="#00b4d8" opacity="0.1"/>
+                            <circle cx="100" cy="70" r="30" fill="#00b4d8" opacity="0.3"/>
+                            <path d="M50 150 Q100 120 150 150" stroke="#00b4d8" stroke-width="20" fill="none" opacity="0.3"/>
+                        </svg>
+                        <p style="font-size: 18px; font-weight: 600;">Mariam Serhan</p>
+                        <p style="font-size: 16px; opacity: 0.8;">Assessora Pessoal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotional Section -->
+    <section class="emotional-section">
+        <div class="container">
+            <h2>Eu Sei Como Você Está Se Sentindo</h2>
+            <p>Depois de um acidente, é normal sentir medo, insegurança e confusão. Você não sabe por onde começar, com quem falar, ou se vai conseguir se recuperar — tanto fisicamente quanto financeiramente.</p>
+            <p>Talvez você esteja preocupado com as contas médicas, com a perda de trabalho, ou simplesmente não sabe se alguém vai realmente te ajudar.</p>
+            
+            <div class="emotional-highlight">
+                Eu estou aqui para te dizer: você não está sozinho.<br>
+                Vou estar ao seu lado em cada passo desse processo.
+            </div>
+
+            <p>Meu trabalho não é só resolver burocracias — é te dar a tranquilidade de saber que tem alguém que se importa genuinamente com o seu bem-estar e com o sucesso do seu caso.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contato">
+        <div class="container">
+            <h2>Pronto Para Começar?</h2>
+            <p>Entre em contato comigo agora. É rápido, gratuito e sem compromisso.</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:4075589191" class="cta-primary">📞 Ligar Agora: (407) 558-9191</a>
+                <a href="https://wa.me/14075589191" class="cta-secondary" target="_blank">💬 WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">⚡</div>
+                    <h3>Avaliação Rápida</h3>
+                    <p>Analiso seu caso rapidamente e te dou um direcionamento claro sobre os próximos passos.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🎯</div>
+                    <h3>Foco em Resultados</h3>
+                    <p>Meu objetivo é garantir que você receba toda a assistência e compensação que merece.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🤝</div>
+                    <h3>Compromisso Real</h3>
+                    <p>Só recebemos se você receber. Nosso sucesso está diretamente ligado ao seu.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🔒</div>
+                    <h3>100% Confidencial</h3>
+                    <p>Todas as informações compartilhadas são tratadas com absoluto sigilo e profissionalismo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Mariam Serhan</strong> | Assessora Pessoal - 1-800-NoFault</p>
+            <p>📞 (407) 558-9191 | 💬 WhatsApp disponível</p>
+            <div class="footer-languages">
+                <p>Atendimento disponível em Português, English e Español</p>
+                <p style="margin-top: 20px; font-size: 12px; opacity: 0.6;">© 2024 1-800-NoFault. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/14075589191?text=Olá%20Mariam,%20preciso%20de%20orientação%20sobre%20um%20acidente" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+        💬
+    </a>
+
+</body>
+</html>
